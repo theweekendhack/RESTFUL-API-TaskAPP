@@ -2,6 +2,7 @@ const mysql = require('mysql2/promise');
 
 const mySQL = 
 {
+    
     connection : null,
 
         init()

@@ -1,0 +1,47 @@
+
+//AUTHENTICATION ALGORITHM STEPS!!!!!!! 
+
+1.  Check to see if the username/email and password pair exists in the DB -if this true
+2.   Create session  and store information about the user in the session
+3. Redirect  the user to their respective dashboard
+
+
+//ALGORITHM  for logging out
+
+1.  Check to see if the session is active - if this is true
+2.  KILL THE SESISON!!! 
+
+
+What is page protection? - NOt from a hacking/security SSL https perspetive 
+
+
+Why do we need to protect pages/routes? 
+
+1. You only want "members" to access protected page
+2. Authorization perspective, you don't want the wrong user accessing pages 
+that they don't have access to ! 
+
+
+How do we protect a page ? 
+
+1. check to see if a session is alive 
+
+2. Implement some authorization code, i.e, check 
+to see if the person has access to visit said page
+
+
+What is a session?
+
+Session is  global variable that remains alive until we KILL IT
+
+!!! It how we matain 
+STATE on THE SERVER!!! 
+
+
+Why are we creating a session???
+
+1. HTTP/HTTPS is StATELESS- WHAT DOES THIS MEAN?? 
+
+
+3.  
+4.

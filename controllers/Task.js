@@ -4,12 +4,18 @@ const taskModel = require("../models/models/Task.js");
 const Task = require("../models/POJO/Task.js");
 
 
+
+//import authentication middleware 
+
+const isAuth = require("../middleware/Auth.js");
+
+
 /*
 Method : GET
 Route    /task  
 Description Get all tasks
 */
-router.get("/",async (req,res)=>{
+router.get("/", isAuth, async(req,res)=>{
 
     try
     {
@@ -40,7 +46,7 @@ Method : GET
 Route    /task/:id
 Description Get a specific task
 */
-router.get("/:id",(req,res)=>{
+router.get("/:id",isAuth,(req,res)=>{
 
     taskModel.getATask(req.params.id)
     .then(task=>{
